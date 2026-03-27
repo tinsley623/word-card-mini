@@ -1,0 +1,8 @@
+module.exports = {
+  provider: 'hunyuan',        // 'hunyuan' or 'deepseek'
+  secretId: 'your-secret-id', // Tencent Cloud SecretId (for hunyuan)
+  secretKey: 'your-secret-key', // Tencent Cloud SecretKey (for hunyuan)
+  model: 'hunyuan-turbos-latest', // Model name
+  apiKey: '',                  // DeepSeek API Key (for deepseek)
+  apiBase: 'https://api.deepseek.com/v1', // API base URL (for deepseek)
+}

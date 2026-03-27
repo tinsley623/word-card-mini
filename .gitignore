@@ -5,3 +5,4 @@ dist/
 .env
 .env.*
 cloud/functions/*/config.json
+cloud/functions/*/llm-config.js
