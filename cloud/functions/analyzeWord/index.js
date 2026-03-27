@@ -86,7 +86,7 @@ async function callHunyuan(word, config) {
   })
 
   const params = {
-    Model: config.model || 'hunyuan-pro',
+    Model: config.model || 'hunyuan-turbos-latest',
     Messages: [
       { Role: 'system', Content: SYSTEM_PROMPT },
       { Role: 'user', Content: word },
