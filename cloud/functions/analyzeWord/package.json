@@ -1,0 +1,10 @@
+{
+  "name": "analyzeWord",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3",
+    "node-fetch": "^2.7.0",
+    "tencentcloud-sdk-nodejs-hunyuan": "^4.0.0"
+  }
+}
