@@ -54,16 +54,19 @@ export async function analyzeWord(word) {
   // Strategy: cloud function → Vercel API → demo data
   if (Taro.cloud) {
     try {
+      console.log('[analyzeWord] Calling cloud function...')
       const res = await Taro.cloud.callFunction({
         name: 'analyzeWord',
         data: { word },
+        config: { timeout: 60000 },
       })
+      console.log('[analyzeWord] Cloud function result:', JSON.stringify(res.result).slice(0, 200))
       if (res.result && !res.result.error) {
         return res.result
       }
-      console.warn('Cloud function error:', res.result?.error)
+      console.warn('[analyzeWord] Cloud function returned error:', res.result?.error)
     } catch (e) {
-      console.warn('Cloud function unavailable, falling back to Vercel API:', e.errMsg)
+      console.warn('[analyzeWord] Cloud function failed:', e.errMsg || e.message || e)
     }
   }
 
