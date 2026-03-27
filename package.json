@@ -1,0 +1,40 @@
+{
+  "name": "word-card-mini",
+  "version": "1.0.0",
+  "private": true,
+  "description": "词卡小程序 - 一字一世界",
+  "templateInfo": {
+    "name": "default",
+    "css": "sass"
+  },
+  "scripts": {
+    "build:weapp": "taro build --type weapp",
+    "dev:weapp": "taro build --type weapp --watch"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "dependencies": {
+    "@tarojs/components": "4.1.11",
+    "@tarojs/helper": "4.1.11",
+    "@tarojs/plugin-framework-react": "4.1.11",
+    "@tarojs/plugin-platform-weapp": "4.1.11",
+    "@tarojs/react": "4.1.11",
+    "@tarojs/runtime": "4.1.11",
+    "@tarojs/shared": "4.1.11",
+    "@tarojs/taro": "4.1.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.28.5",
+    "@babel/runtime": "^7.29.2",
+    "@tarojs/cli": "4.1.11",
+    "@tarojs/webpack5-runner": "4.1.11",
+    "babel-preset-taro": "^4.1.11",
+    "sass": "^1.69.5",
+    "webpack": "5.91.0"
+  }
+}

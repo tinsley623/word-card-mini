@@ -1,0 +1,132 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home-bg-chars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.home-bg-char {
+  position: absolute;
+  color: rgba(61, 53, 41, 0.04);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.bg-char-0 { font-size: 240px; left: -40px; top: 60px; transform: rotate(-12deg); }
+.bg-char-1 { font-size: 200px; right: -30px; top: 200px; transform: rotate(8deg); }
+.bg-char-2 { font-size: 280px; left: 50px; top: 500px; transform: rotate(-5deg); }
+.bg-char-3 { font-size: 220px; right: 20px; top: 700px; transform: rotate(15deg); }
+.bg-char-4 { font-size: 260px; left: 100px; top: 900px; transform: rotate(-10deg); }
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 40px 60px;
+}
+
+.home-logo {
+  font-size: 120px;
+  font-weight: 900;
+  color: #3d3529;
+  line-height: 1.2;
+}
+
+.home-subtitle {
+  font-size: 36px;
+  letter-spacing: 24px;
+  color: #6b5e4f;
+  margin-top: 16px;
+}
+
+.home-desc {
+  font-size: 28px;
+  color: #8a7d6b;
+  text-align: center;
+  margin-top: 40px;
+  line-height: 1.8;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 60px;
+  background: #fff;
+  border-radius: 60px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 24px rgba(61, 53, 41, 0.08);
+}
+
+.search-input {
+  flex: 1;
+  font-size: 28px;
+  color: #3d3529;
+  padding: 12px 16px;
+}
+
+.search-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #3d3529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.home-desc-sub {
+  font-size: 22px;
+  color: #b5a898;
+  margin-top: 24px;
+}
+
+.home-tags {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-tags-label {
+  font-size: 24px;
+  color: #8a7d6b;
+  margin-bottom: 20px;
+}
+
+.home-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.home-tag {
+  padding: 12px 28px;
+  border: 1px solid rgba(61, 53, 41, 0.15);
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.home-tag-text {
+  font-size: 26px;
+  color: #6b5e4f;
+}

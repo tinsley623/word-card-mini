@@ -1,0 +1,69 @@
+.wordcard-page {
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.card-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.loading-char {
+  font-size: 120px;
+  color: rgba(61, 53, 41, 0.12);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.loading-text {
+  font-size: 28px;
+  color: #b5a898;
+  margin-top: 20px;
+}
+
+.card-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.error-title {
+  font-size: 36px;
+  color: #3d3529;
+  font-weight: 700;
+}
+
+.error-msg {
+  font-size: 26px;
+  color: #8a7d6b;
+  margin-top: 16px;
+}
+
+.retry-btn {
+  margin-top: 40px;
+  padding: 16px 40px;
+  background: #3d3529;
+  border-radius: 40px;
+  color: #f5f0e8;
+  font-size: 28px;
+}
+
+.save-btn {
+  margin: 40px auto;
+  width: 400px;
+  padding: 24px 0;
+  background: #3d3529;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.save-btn-text {
+  color: #f5f0e8;
+  font-size: 30px;
+  font-weight: 500;
+}
