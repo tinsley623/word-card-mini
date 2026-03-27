@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "openapi": []
+  },
+  "triggers": [],
+  "timeout": 60,
+  "envVariables": {
+    "LLM_PROVIDER": "hunyuan",
+    "TENCENT_SECRET_ID": "your-secret-id",
+    "TENCENT_SECRET_KEY": "your-secret-key",
+    "LLM_MODEL": "hunyuan-turbos-latest"
+  }
+}

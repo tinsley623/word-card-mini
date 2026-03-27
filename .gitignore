@@ -4,4 +4,4 @@ dist/
 *.local
 .env
 .env.*
-node_modules
+cloud/functions/*/config.json

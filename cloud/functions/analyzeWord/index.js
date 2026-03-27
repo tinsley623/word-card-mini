@@ -108,20 +108,20 @@ exports.main = async (event) => {
 
   try {
     const db = cloud.database()
-    let config = {}
+    const config = {
+      provider: process.env.LLM_PROVIDER || 'deepseek',
+      secretId: process.env.TENCENT_SECRET_ID || '',
+      secretKey: process.env.TENCENT_SECRET_KEY || '',
+      model: process.env.LLM_MODEL || '',
+      apiKey: process.env.LLM_API_KEY || '',
+      apiBase: process.env.LLM_API_BASE || 'https://api.deepseek.com/v1',
+    }
 
     try {
       const configRes = await db.collection('config').doc('llm').get()
-      config = configRes.data
+      Object.assign(config, configRes.data)
     } catch (e) {
-      config = {
-        provider: process.env.LLM_PROVIDER || 'deepseek',
-        apiKey: process.env.LLM_API_KEY || '',
-        apiBase: process.env.LLM_API_BASE || 'https://api.deepseek.com/v1',
-        model: process.env.LLM_MODEL || 'deepseek-chat',
-        secretId: process.env.TENCENT_SECRET_ID || '',
-        secretKey: process.env.TENCENT_SECRET_KEY || '',
-      }
+      // no db config, use env vars
     }
 
     let content
